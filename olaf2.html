@@ -7,14 +7,14 @@
         
         <style>
             @font-face {
-                font-family: 'ua-brandblack';
+                font-family: 'ua-brand';
                 src: url('./fonts/ua-brand-black.woff2') format('woff2');
-                font-weight: normal;
+                font-weight: bold;
                 font-style: normal;
             }
 
             @font-face {
-                font-family: 'ua-brandbold';
+                font-family: 'ua-brand';
                 src: url('./fonts/ua-brand-bold.woff2') format('woff2');
                 font-weight: normal;
                 font-style: normal;
@@ -32,11 +32,12 @@
             }
 
             h1 {
-                font-family: 'ua-brandblack';
+                font-family: 'ua-brand';
             }
 
             h3 {
-                font-family: 'ua-brandbold';
+                font-family: 'ua-brand';
+                font-weight: normal;
             }
 
             div {
@@ -45,26 +46,32 @@
             }
 
             ul {
-                margin: 15px;
-                padding: 10px;
+                margin: 0 10px;
+                padding: 25px;
+                color: #6f370f;
                 font-family: 'velesregular';
-                border: 1px solid #b47940;
-                border-radius: 10px;
-                background-color: rgba(201, 152, 104, .5);
-                box-shadow: 10px 10px 5px rgba(221, 190, 160, .5);
+                font-size: 14px;
+                /*border: 1px solid #b47940;*/
+                border-radius: 25px;
+                box-shadow: 10px 10px 10px rgba(221, 190, 160, .5);
+                width: auto;
+                background: linear-gradient( rgba(255, 255, 255, .9), rgba(255, 255, 255, .1) ), url(./images/beresta.png);
+                background-size: cover;
+                box-shadow: 0 0 10px 10px white inset;
             }
 
             ul:nth-child(even) {
-                margin-left: 50px;
+                margin-left: 75px;
             }
 
             ul:nth-child(odd) {
-                margin-right: 50px;
+                margin-right: 75px;
             }
 
             li {
                 list-style: none;
-                line-height: 1.5em;
+                line-height: 2em;
+                white-space: nowrap;
             }
 
             li:nth-child(2), li:nth-child(4) {
